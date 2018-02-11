@@ -1,5 +1,4 @@
 #checkio BirdLanguage
-#coding:utf-8
 
 ##########
 #MyAnswer
@@ -55,10 +54,6 @@ def translate(phrase):
     return phrase
 
 #replaceが結局先頭のものしか削除できないため断念。
-
-
-##########
-#2
 
 
 ##########

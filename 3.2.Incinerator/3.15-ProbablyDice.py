@@ -1,5 +1,4 @@
 #checkio BirdLanguage
-#coding:utf-8
 
 ##########
 #MyAnswer
@@ -29,20 +28,6 @@ def probability(dice_number, sides, target):
 #Inadequate answer 2のコメントに書いたことをした。
 #たしていって同じ数になったものを、辞書に 和:個数 で記録し、計算を削減。格段に早くなったっぽい。
 
-
-##########
-#1
-
-def probability(n,s,t):
-    p = [1]+[0]*n*s #和の個数を格納するリストを作っている。indexが和に対応
-    for d in range(n): #ダイス個数分以下の処理を繰り返す。つまりダイスを一個ずつ振っていく。
-        for i in range(n*s,-1,-1):
-            p[i] = sum(p[i-j-1] for j in range(s) if i>j)/s
-            #和iの確率は、和から出目を引いたもの（ただし差が1以上に限るのは当然）の確率（つまり１ダイスロール前の和の確率）の合計
-            #毎回全可能性（ありうる最大和から下へ）を辿るが、まだ生じ得ない和は一個前が0なので今も0になるだけ。
-            #そして上から辿るのは、上和は下和へ絶対に影響しないため。
-    return p[t] if t<=n*s else 0 #最後にtarget以上の場合を除外しているが、
-    #行数は増えても最初に持って来た方が処理は減るよな。
 
 ##########
 #Inadequate answer

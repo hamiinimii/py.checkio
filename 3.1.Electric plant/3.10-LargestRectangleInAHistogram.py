@@ -1,5 +1,4 @@
 #checkio_Brackets
-#coding:utf-8
 
 ##########
 #MyAnswer
@@ -40,23 +39,6 @@ def largest_histogram(h):
     return(max(mxr))
 
 #0以下になった場合を除けないなど問題多数。
-
-
-##########
-#1
-
-largest_histogram = lambda his: max(min(his[i:j])*(j-i) for i in range(len(his)) for j in range(i+1, len(his)+1))
-
-#長方形自体を全部取ってしまう。そうなのだ、１行ということは一要素にするということだ。
-
-##########
-#2
-from itertools import groupby
-
-def largest_histogram(histogram):
-    return max([max(map(lambda x: sum(x),[list(j) for i, j in groupby(map(lambda x: True if x >= level else False, histogram))]))*level for level in range(1, max(histogram)+1)])
-
-#うん。
 
 ##########
 

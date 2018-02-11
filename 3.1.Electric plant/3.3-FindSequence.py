@@ -1,5 +1,4 @@
 #checkio_Brackets
-#coding:utf-8
 
 ##########
 #MyAnswer
@@ -56,15 +55,6 @@ def checkio(matrix):
         num = [0,0]
         
     return False
-
-
-##########
-#1
-
-
-##########
-#2
-
 
 
 ##########

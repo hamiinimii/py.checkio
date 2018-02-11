@@ -24,14 +24,6 @@ def checkio(text):
     return cnt
 
 ##########
-#1
-
-import re
-checkio=lambda t:sum(any(all('@'<c and j^(c in'aeiouyAEIOUY')^i&1
-for i,c in enumerate(w))for j in(0,1))for w in re.findall(r"\w\w+",t))
-
-
-##########
 
 if __name__ == '__main__':
     #These "asserts" using only for self-checking and not necessary for auto-testing

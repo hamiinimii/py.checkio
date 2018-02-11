@@ -1,5 +1,4 @@
 #checkio_Brackets
-#coding:utf-8
 
 ##########
 #MyAnswer
@@ -27,24 +26,6 @@ def checkio(n, m):
  #数の長さ調整はzerosの追加で行なっている。
  #min(nl,... のところは、+=で書こうとすると'SyntaxError: can't assign to function call'
  #代わりにメソッドの.extendを使ったらOK.
-
-##########
-#1
-
-FORMAT = '{0:0>32b}'
-
-def checkio(n, m):
-    n = FORMAT.format(n)
-    m = FORMAT.format(m)
-    return sum([1 for i, _ in enumerate(n) if n[i] != m[i]])
-
- #format関数。よく使われる形式は次の通り。
- #'任意の文字列{}任意の文字列'.format(変数)
-
-##########
-#2
-
-
 
 ##########
 

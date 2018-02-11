@@ -1,5 +1,4 @@
 #checkio_Brackets
-#coding:utf-8
 
 ##########
 def reverse_roman(rst):
@@ -11,12 +10,6 @@ def reverse_roman(rst):
         rst=rst.replace(i,str(roman[i])+'+')
     
     return eval(rst+'0')
-
-##########
-#1
-
-reverse_roman=lambda n,f='IVXLCDM'.index:sum((1,5)[f(i)%2]*10**(f(i)//2)*(-1,1)[f(i)>=f(j)]for i,j in zip(n,n[1:]+n[-1]))
-
 
 
 ##########
