@@ -1,5 +1,4 @@
-#checkio_SolveStripedWords
-
+#checkio_Friends
 
 ##########
 #Answer
